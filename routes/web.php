@@ -17,5 +17,5 @@
 
 Route::get('/', function () {
 //    return view('layouts.frontend');
-    return view('frontend.home.index');
+    return view('backend.home.index');
 });
