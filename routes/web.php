@@ -11,6 +11,11 @@
 |
 */
 
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
 Route::get('/', function () {
-    return view('welcome');
+//    return view('layouts.frontend');
+    return view('frontend.home.index');
 });

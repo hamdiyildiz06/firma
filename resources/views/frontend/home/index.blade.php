@@ -24,7 +24,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mu-about-left">
-                                        <img class="" src="assets/images/about-us.jpg" alt="img">
+                                        <img class="" src="{{asset("assets/frontend")}}/images/about-us.jpg" alt="img">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -230,8 +230,8 @@
                                     <div class="filtr-container">
 
                                         <div class="col-xs-6 col-sm-6 col-md-4 filtr-item" data-category="4">
-                                            <a class="mu-imglink" href="assets/images/portfolio/img-1.jpg" title="PAINTING">
-                                                <img class="img-responsive" src="assets/images/portfolio/img-1.jpg" alt="image">
+                                            <a class="mu-imglink" href="{{asset("assets/frontend")}}/images/portfolio/img-1.jpg" title="PAINTING">
+                                                <img class="img-responsive" src="{{asset("assets/frontend")}}/images/portfolio/img-1.jpg" alt="image">
                                                 <div class="mu-filter-item-content">
                                                     <h4 class="mu-filter-item-title">PAINTING</h4>
                                                     <span class="fa fa-long-arrow-right"></span>
@@ -240,8 +240,8 @@
                                         </div>
 
                                         <div class="col-xs-6 col-sm-6 col-md-4 filtr-item" data-category="5">
-                                            <a class="mu-imglink" href="assets/images/portfolio/img-2.jpg" title="BRANDING">
-                                                <img class="img-responsive" src="assets/images/portfolio/img-2.jpg" alt="image">
+                                            <a class="mu-imglink" href="{{asset("assets/frontend")}}/images/portfolio/img-2.jpg" title="BRANDING">
+                                                <img class="img-responsive" src="{{asset("assets/frontend")}}/images/portfolio/img-2.jpg" alt="image">
                                                 <div class="mu-filter-item-content">
                                                     <h4 class="mu-filter-item-title">BRANDING</h4>
                                                     <span class="fa fa-long-arrow-right"></span>
@@ -250,8 +250,8 @@
                                         </div>
 
                                         <div class="col-xs-6 col-sm-6 col-md-4 filtr-item" data-category="3">
-                                            <a class="mu-imglink" href="assets/images/portfolio/img-3.jpg" title="E-COMMERCE">
-                                                <img class="img-responsive" src="assets/images/portfolio/img-3.jpg" alt="image">
+                                            <a class="mu-imglink" href="{{asset("assets/frontend")}}/images/portfolio/img-3.jpg" title="E-COMMERCE">
+                                                <img class="img-responsive" src="{{asset("assets/frontend")}}/images/portfolio/img-3.jpg" alt="image">
                                                 <div class="mu-filter-item-content">
                                                     <h4 class="mu-filter-item-title">E-COMMERCE</h4>
                                                     <span class="fa fa-long-arrow-right"></span>
@@ -260,8 +260,8 @@
                                         </div>
 
                                         <div class="col-xs-6 col-sm-6 col-md-4 filtr-item" data-category="1">
-                                            <a class="mu-imglink" href="assets/images/portfolio/img-4.jpg" title="WEB DESIGN">
-                                                <img class="img-responsive" src="assets/images/portfolio/img-4.jpg" alt="image">
+                                            <a class="mu-imglink" href="{{asset("assets/frontend")}}/images/portfolio/img-4.jpg" title="WEB DESIGN">
+                                                <img class="img-responsive" src="{{asset("assets/frontend")}}/images/portfolio/img-4.jpg" alt="image">
                                                 <div class="mu-filter-item-content">
                                                     <h4 class="mu-filter-item-title">WEB DESIGN</h4>
                                                     <span class="fa fa-long-arrow-right"></span>
@@ -270,8 +270,8 @@
                                         </div>
 
                                         <div class="col-xs-6 col-sm-6 col-md-4 filtr-item" data-category="2">
-                                            <a class="mu-imglink" href="assets/images/portfolio/img-5.jpg" title="MOBILE DEVELOPMENT">
-                                                <img class="img-responsive" src="assets/images/portfolio/img-5.jpg" alt="image">
+                                            <a class="mu-imglink" href="{{asset("assets/frontend")}}/images/portfolio/img-5.jpg" title="MOBILE DEVELOPMENT">
+                                                <img class="img-responsive" src="{{asset("assets/frontend")}}/images/portfolio/img-5.jpg" alt="image">
                                                 <div class="mu-filter-item-content">
                                                     <h4 class="mu-filter-item-title">MOBILE DEVELOPMENT</h4>
                                                     <span class="fa fa-long-arrow-right"></span>
@@ -280,8 +280,8 @@
                                         </div>
 
                                         <div class="col-xs-6 col-sm-6 col-md-4 filtr-item" data-category="5">
-                                            <a class="mu-imglink" href="assets/images/portfolio/img-6.jpg" title="BRANDING">
-                                                <img class="img-responsive" src="assets/images/portfolio/img-6.jpg" alt="image">
+                                            <a class="mu-imglink" href="{{asset("assets/frontend")}}/images/portfolio/img-6.jpg" title="BRANDING">
+                                                <img class="img-responsive" src="{{asset("assets/frontend")}}/images/portfolio/img-6.jpg" alt="image">
                                                 <div class="mu-filter-item-content">
                                                     <h4 class="mu-filter-item-title">BRANDING</h4>
                                                     <span class="fa fa-long-arrow-right"></span>
@@ -290,8 +290,8 @@
                                         </div>
 
                                         <div class="col-xs-6 col-sm-6 col-md-4 filtr-item" data-category="3">
-                                            <a class="mu-imglink" href="assets/images/portfolio/img-7.jpg" title="E-COMMERCE">
-                                                <img class="img-responsive" src="assets/images/portfolio/img-7.jpg" alt="image">
+                                            <a class="mu-imglink" href="{{asset("assets/frontend")}}/images/portfolio/img-7.jpg" title="E-COMMERCE">
+                                                <img class="img-responsive" src="{{asset("assets/frontend")}}/images/portfolio/img-7.jpg" alt="image">
                                                 <div class="mu-filter-item-content">
                                                     <h4 class="mu-filter-item-title">E-COMMERCE</h4>
                                                     <span class="fa fa-long-arrow-right"></span>
@@ -300,8 +300,8 @@
                                         </div>
 
                                         <div class="col-xs-6 col-sm-6 col-md-4 filtr-item" data-category="4">
-                                            <a class="mu-imglink" href="assets/images/portfolio/img-8.jpg" title="PAINTING">
-                                                <img class="img-responsive" src="assets/images/portfolio/img-8.jpg" alt="image">
+                                            <a class="mu-imglink" href="{{asset("assets/frontend")}}/images/portfolio/img-8.jpg" title="PAINTING">
+                                                <img class="img-responsive" src="{{asset("assets/frontend")}}/images/portfolio/img-8.jpg" alt="image">
                                                 <div class="mu-filter-item-content">
                                                     <h4 class="mu-filter-item-title">PAINTING</h4>
                                                     <span class="fa fa-long-arrow-right"></span>
@@ -310,8 +310,8 @@
                                         </div>
 
                                         <div class="col-xs-6 col-sm-6 col-md-4 filtr-item" data-category="1">
-                                            <a class="mu-imglink" href="assets/images/portfolio/img-4.jpg" title="WEB DESIGN">
-                                                <img class="img-responsive" src="assets/images/portfolio/img-4.jpg" alt="image">
+                                            <a class="mu-imglink" href="{{asset("assets/frontend")}}/images/portfolio/img-4.jpg" title="WEB DESIGN">
+                                                <img class="img-responsive" src="{{asset("assets/frontend")}}/images/portfolio/img-4.jpg" alt="image">
                                                 <div class="mu-filter-item-content">
                                                     <h4 class="mu-filter-item-title">WEB DESIGN</h4>
                                                     <span class="fa fa-long-arrow-right"></span>
@@ -503,21 +503,21 @@
                                 <ul class="mu-testimonial-slide">
 
                                     <li>
-                                        <img class="mu-rt-img" src="assets/images/traveler-1.jpg" alt="img">
+                                        <img class="mu-rt-img" src="{{asset("assets/frontend")}}/images/traveler-1.jpg" alt="img">
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa</p>
                                         <h5 class="mu-rt-name">Emma Marshall</h5>
                                         <span class="mu-rt-title">Web Developer </span>
                                     </li>
 
                                     <li>
-                                        <img class="mu-rt-img" src="assets/images/traveler-2.jpg" alt="img">
+                                        <img class="mu-rt-img" src="{{asset("assets/frontend")}}/images/traveler-2.jpg" alt="img">
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa</p>
                                         <h5 class="mu-rt-name">Jhon Doe</h5>
                                         <span class="mu-rt-title">UI/UX Designer</span>
                                     </li>
 
                                     <li>
-                                        <img class="mu-rt-img" src="assets/images/traveler-3.jpg" alt="img">
+                                        <img class="mu-rt-img" src="{{asset("assets/frontend")}}/images/traveler-3.jpg" alt="img">
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa</p>
                                         <h5 class="mu-rt-name">Jessica Doe</h5>
                                         <span class="mu-rt-title">Web Designer </span>
@@ -552,7 +552,7 @@
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <article class="mu-blog-item">
-                                                    <a href="#"><img src="assets/images/blog-img-1.jpg" alt="blgo image"></a>
+                                                    <a href="#"><img src="{{asset("assets/frontend")}}/images/blog-img-1.jpg" alt="blgo image"></a>
                                                     <div class="mu-blog-item-content">
                                                         <ul class="mu-blog-meta">
                                                             <li>BY: ADMIN </li>
@@ -567,7 +567,7 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <article class="mu-blog-item">
-                                                    <a href="#"><img src="assets/images/blog-img-2.jpg" alt="blgo image"></a>
+                                                    <a href="#"><img src="{{asset("assets/frontend")}}/images/blog-img-2.jpg" alt="blgo image"></a>
                                                     <div class="mu-blog-item-content">
                                                         <ul class="mu-blog-meta">
                                                             <li>BY: ADMIN </li>
@@ -582,7 +582,7 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <article class="mu-blog-item">
-                                                    <a href="#"><img src="assets/images/blog-img-3.jpg" alt="blgo image"></a>
+                                                    <a href="#"><img src="{{asset("assets/frontend")}}/images/blog-img-3.jpg" alt="blgo image"></a>
                                                     <div class="mu-blog-item-content">
                                                         <ul class="mu-blog-meta">
                                                             <li>BY: ADMIN </li>
@@ -647,27 +647,27 @@
                             <div class="mu-clients-slider">
 
                                 <div class="mu-clients-single">
-                                    <img src="assets/images/client-brand-1.jpg" alt="Brand Logo">
+                                    <img src="{{asset("assets/frontend")}}/images/client-brand-1.jpg" alt="Brand Logo">
                                 </div>
 
                                 <div class="mu-clients-single">
-                                    <img src="assets/images/client-brand-2.jpg" alt="Brand Logo">
+                                    <img src="{{asset("assets/frontend")}}/images/client-brand-2.jpg" alt="Brand Logo">
                                 </div>
 
                                 <div class="mu-clients-single">
-                                    <img src="assets/images/client-brand-3.jpg" alt="Brand Logo">
+                                    <img src="{{asset("assets/frontend")}}/images/client-brand-3.jpg" alt="Brand Logo">
                                 </div>
 
                                 <div class="mu-clients-single">
-                                    <img src="assets/images/client-brand-4.jpg" alt="Brand Logo">
+                                    <img src="{{asset("assets/frontend")}}/images/client-brand-4.jpg" alt="Brand Logo">
                                 </div>
 
                                 <div class="mu-clients-single">
-                                    <img src="assets/images/client-brand-5.jpg" alt="Brand Logo">
+                                    <img src="{{asset("assets/frontend")}}/images/client-brand-5.jpg" alt="Brand Logo">
                                 </div>
 
                                 <div class="mu-clients-single">
-                                    <img src="assets/images/client-brand-6.jpg" alt="Brand Logo">
+                                    <img src="{{asset("assets/frontend")}}/images/client-brand-6.jpg" alt="Brand Logo">
                                 </div>
                             </div>
                             <!-- End Clients brand logo -->
