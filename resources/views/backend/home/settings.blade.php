@@ -48,7 +48,7 @@
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
                                         <td>{{$setting->key}}</td>
-                                        <td>{{$setting->value}}</td>
+                                        <td><input class="form-control settingInput" type="text" value="{{$setting->value}}" name="{{$setting->key}}" ></td>
                                     </tr>
                                 @endforeach
                                 </tbody>
@@ -67,6 +67,30 @@
 @endsection
 
 @push("customJs")
+    <script>
+
+        $(".settingInput").on("change",function (){
+            $input = $(this);
+            $.ajax({
+                type : "post",
+                url : "{{route("backend.settings.update")}}",
+                data: {
+                    _token: "{{csrf_token()}}",
+                    key   : $input.attr("name"),
+                    value : $input.val()
+                },
+                success: function (response){
+                    console.log("başarılı");
+                    console.log(response);
+                },
+                error: function (){
+                    console.log("Bir Hata oluştu");
+                    console.log(response);
+                }
+            });
+        });
+
+    </script>
 @endpush
 
 @push("customCss")

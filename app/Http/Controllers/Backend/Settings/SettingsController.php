@@ -14,4 +14,13 @@ class SettingsController extends Controller
 
         return view("backend.home.settings", compact("settings"));
     }
+
+    public function update(Request $request){
+        $setting = Setting::where("key",$request->key)->update(["value"=>$request->value]);
+        if ($setting){
+            return "Başarılı";
+        }else{
+            return "Hata Oluştu";
+        }
+    }
 }

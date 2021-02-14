@@ -32,6 +32,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Google Font -->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    @stack("customCss")
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -90,6 +92,7 @@ desired effect
 <!-- AdminLTE App -->
 <script src="{{asset("assets/backend/dist/js/adminlte.min.js")}}"></script>
 
+@stack("customJs")
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
      user experience. -->
