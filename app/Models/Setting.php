@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Setting extends Model
 {
-    protected $dates = false;
+    public $timestamps = false;
     protected $fillable = ['key','value'];
 }

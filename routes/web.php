@@ -10,12 +10,16 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+/*
 
 Route::get('/', function () {
-//    return view('layouts.frontend');
+    return view('welcome');
+});
+
+Route::get('/', function () {
+    return view('layouts.frontend');
     return view('backend.home.index');
 });
+*/
+
+include base_path("routes/backend/routes.php");
