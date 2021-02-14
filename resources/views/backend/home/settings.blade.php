@@ -24,10 +24,8 @@
 
                             <div class="box-tools">
                                 <div class="input-group input-group-sm" style="width: 150px;">
-                                    <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
-
                                     <div class="input-group-btn">
-                                        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                        <button type="submit" class="btn btn-default pull-right" id="newSetting">Yeni Ekle</button>
                                     </div>
                                 </div>
                             </div>
@@ -40,15 +38,18 @@
                                         <th>ID</th>
                                         <th>Anahtar</th>
                                         <th>Değer</th>
+                                        <th>Sil</th>
                                     </tr>
                                 </thead>
 
-                                <tbody>
+                                <tbody id="settingTableBody">
+
                                 @foreach($settings as $setting)
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
                                         <td>{{$setting->key}}</td>
                                         <td><input class="form-control settingInput" type="text" value="{{$setting->value}}" name="{{$setting->key}}" ></td>
+                                        <td><button data-key="{{$setting->key}}" class="btn btn-danger settingDelete">Sil</button> </td>
                                     </tr>
                                 @endforeach
                                 </tbody>
@@ -86,6 +87,78 @@
                 error: function (){
                     console.log("Bir Hata oluştu");
                     console.log(response);
+                }
+            });
+        });
+
+        $("#newSetting").click(function (){
+            var data = "<tr>\n" +
+                "<td>yeni</td>" +
+                    "<td><input class=\"form-control\" type=\"text\" name=\"key\" id='newSettingKey' ></td>" +
+                    "<td><input class=\"form-control\" type=\"text\"  name=\"value\" id='newSettingValue' ></td>" +
+                "</tr>"
+            $("#settingTableBody").prepend(data);
+
+            $(document).on("change","#newSettingKey", function (){
+                if( $(this).val().length > 3 && $("#newSettingValue").val().length > 3 ){
+                    newSetting();
+                }
+            });
+
+            $(document).on("change","#newSettingValue", function (){
+               if ( $(this).val().length > 3 && $("#newSettingKey").val().length > 3 ){
+                   newSetting();
+               }
+            });
+
+            function newSetting(){
+                var key   = $("#newSettingKey").val();
+                var value = $("#newSettingValue").val();
+
+                $.ajax({
+                    type  : "post",
+                    url   : "{{route("backend.settings.create")}}",
+                    data  : {
+                        _token: "{{csrf_token()}}",
+                        key   : key,
+                        value : value
+                    },
+                    success: function (response){
+                        if (response.status == "success"){
+                            location.reload();
+                        }
+                        console.log(response);
+                    },
+                    error: function (){
+                        if (response.status == "error"){
+                            console.log(response)
+                        }
+                    }
+                })
+            }
+
+        })
+
+        $(".settingDelete").click(function (){
+            var button = $(this);
+            $(this).closest("tr").remove();
+
+            $.ajax({
+               type : "POST",
+               url  : "{{route("backend.settings.delete")}}",
+               data : {
+                   _token : "{{csrf_token()}}",
+                   key    : button.data("key"),
+
+               },
+               success: function (response){
+                   if (response.status == "success"){
+                       button.closest("tr").remove();
+                   }
+                   console.log(response)
+               },
+                error:  function (response){
+                   console.log(response);
                 }
             });
         });
